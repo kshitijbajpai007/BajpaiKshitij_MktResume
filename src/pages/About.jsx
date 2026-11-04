@@ -34,13 +34,15 @@ const About = () => {
 
           <div className="space-y-6 text-black font-medium text-lg md:text-xl leading-relaxed mb-12">
             <p>
-              I’m Kshitij Bajpai, a budding creative strategist and digital copywriter. I grew up switching places across many tier 2 cities, then moved to New Delhi. And this shift gave me a way to read the distance between audiences: what earns trust, what signals status, what feels familiar, and what falls flat.
+              I’m Kshitij Bajpai, a budding creative strategist and digital copywriter. I grew up moving across many tier 2 cities, then moved to New Delhi. And this shift gave me a way to read the distance between audiences: what earns trust, what signals status, what feels familiar, and what falls flat.
             </p>
+            <p>
+              One thing I realised was that good taste is rooted in cultural capital. Think about it, a joke lands usually when you and your friends share the same cultural references. You find yourself in higher rooms because of your taste, and your cultural capital. So people need good things to develop their taste, and that's where I come in.          </p>
             <p>
               I pay attention to cultural capital because it moves people before a campaign ever reaches them. I turn those signals into sharp strategy and copy that makes brands matter to the people they need to reach.
             </p>
             <p>
-              The work must land in culture. The numbers will follow.
+              The work must land in culture. The numbers will show up as material evidence.
             </p>
           </div>
         </motion.div>

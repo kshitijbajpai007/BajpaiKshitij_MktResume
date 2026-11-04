@@ -17,7 +17,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center px-6 md:px-12 pt-24 pb-12 border-b-[16px] border-accent relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-32 bg-accent -rotate-12 blur-3xl opacity-20 pointer-events-none" />
-        
+
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -38,9 +38,9 @@ const Home = () => {
           className="flex flex-col items-center mt-4 text-center max-w-3xl relative z-10"
         >
           <p className="font-mono text-xs md:text-sm font-black uppercase tracking-[0.5em] text-neutral-400 mb-12 leading-relaxed">
-            Editorial photography and cinematic videography <br/> that tells your story without saying a word.
+            Culture-led copywriting and strategy <br /> turning insights into stories that people notice, and care about.
           </p>
-          
+
 
         </motion.div>
       </section>
@@ -63,12 +63,12 @@ const Home = () => {
               ${i === 2 ? 'border-b-[8px] md:border-b-0' : ''}
             `}
           >
-            
+
             <div className="relative z-10 flex flex-col items-center">
               <span className="font-mono text-sm font-black text-neutral-400 group-hover:text-black mb-4 flex items-center gap-4 transition-colors">
                 <span className="w-8 h-1 bg-black group-hover:w-16 transition-all duration-500" /> SECTION // 0{i + 1}
               </span>
-              <motion.h2 
+              <motion.h2
                 className="text-4xl md:text-5xl font-black uppercase tracking-tighter transition-all duration-500 group-hover:scale-110 group-hover:rotate-1"
               >
                 {quad.label}
@@ -81,7 +81,7 @@ const Home = () => {
 
 
             {/* LayoutId Support for Page Transition */}
-            <motion.div 
+            <motion.div
               layoutId={`bg-${quad.id}`}
               className="absolute inset-0 pointer-events-none"
             />
@@ -93,8 +93,8 @@ const Home = () => {
       <section className="py-40 px-6 md:px-12 bg-white flex flex-col items-center text-center">
         <h3 className="font-mono text-xs font-black uppercase tracking-[0.6em] text-accent mb-12">// The Philosophy</h3>
         <p className="text-4xl md:text-7xl font-black uppercase leading-[0.9] tracking-tighter max-w-6xl">
-          Culture isn’t decoration. <br />
-          It’s the <span className="text-accent">difference</span> between a brand that gets noticed and one that gets chosen.
+          Good taste isn't a party trick. <br />
+          It’s the <span className="text-accent">difference</span> between a brand that's seen and one that's chosen.
         </p>
       </section>
     </div>
