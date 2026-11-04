@@ -93,11 +93,11 @@ const ProjectSheet = ({ project, isOpen, onClose }) => {
                     <div className="grid grid-cols-2 gap-12">
                       <div>
                         <span className="font-mono text-[10px] font-black uppercase tracking-widest text-neutral-400 block mb-4 underline decoration-accent decoration-2 underline-offset-4">Primary Director</span>
-                        <p className="font-black uppercase text-xl">Lama Bajpai</p>
+                        <p className="font-black uppercase text-xl">Kshitij Bajpai</p>
                       </div>
                       <div>
                         <span className="font-mono text-[10px] font-black uppercase tracking-widest text-neutral-400 block mb-4 underline decoration-accent decoration-2 underline-offset-4">Technical Grade</span>
-                        <p className="font-black uppercase text-xl">LAMA Post-House</p>
+                        <p className="font-black uppercase text-xl">KSHITIJ Post-House</p>
                       </div>
                     </div>
 
@@ -110,7 +110,7 @@ const ProjectSheet = ({ project, isOpen, onClose }) => {
               </div>
 
               <div className="p-12 bg-black text-white flex justify-between items-center border-t-[12px] border-accent">
-                <span className="font-mono text-xs font-black uppercase tracking-widest text-accent">LAMA // STUDIO VERIFIED</span>
+                <span className="font-mono text-xs font-black uppercase tracking-widest text-accent">KSHITIJ // STUDIO VERIFIED</span>
                 <p className="font-black uppercase text-2xl tracking-tighter">PROJECT ARCHIVE.00{project.id}</p>
               </div>
             </motion.div>

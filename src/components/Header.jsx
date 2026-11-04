@@ -39,7 +39,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <Link to="/" className="text-4xl font-black tracking-[-0.05em] uppercase group">
-          LAMA<span className="text-accent group-hover:text-black transition-colors">.</span>
+          KSHITIJ<span className="text-accent group-hover:text-black transition-colors">.</span>
         </Link>
         
         <nav className="hidden md:flex space-x-12 items-center">

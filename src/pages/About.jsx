@@ -14,8 +14,8 @@ const About = () => {
           className="w-full md:w-5/12 aspect-[3/4] relative overflow-hidden border-8 border-black shadow-[12px_12px_0px_0px_rgba(162,198,94,1)]"
         >
           <img
-            src="/LamaAboutPhoto.jpeg"
-            alt="Portrait of Photographer"
+            src="/BajpaiAboutPhoto.png"
+            alt="Portrait of Kshitij Bajpai"
             loading="lazy"
             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
           />
@@ -31,20 +31,16 @@ const About = () => {
           <h2 className="text-sm font-black tracking-[0.4em] text-neutral-400 uppercase mb-6 flex items-center gap-4">
             <span className="w-8 h-1 bg-accent" /> THE STORY
           </h2>
-          <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-12 leading-[0.85] uppercase">
-            OBSESSED WITH THE <br /> <span className="text-accent underline decoration-[10px] underline-offset-[12px]">ALCHEMY OF LIGHT.</span>
-          </h1>
 
-          <div className="space-y-8 text-black font-medium text-xl md:text-2xl leading-relaxed mb-12">
+          <div className="space-y-6 text-black font-medium text-lg md:text-xl leading-relaxed mb-12">
             <p>
-              I am a visual artist specializing in editorial portraits and cinematic videography.
-              My approach is rooted in the belief that the most profound stories are told in the
-              quiet spaces between the posed moments.
+              I’m Kshitij Bajpai, a budding creative strategist and digital copywriter. I grew up switching places across many tier 2 cities, then moved to New Delhi. And this shift gave me a way to read the distance between audiences: what earns trust, what signals status, what feels familiar, and what falls flat.
             </p>
             <p>
-              With over a decade of experience across the globe, I strive to create imagery that
-              feels both timeless and intimately present. It's about capturing the authentic essence
-              of a subject—unfiltered, raw, and fundamentally human.
+              I pay attention to cultural capital because it moves people before a campaign ever reaches them. I turn those signals into sharp strategy and copy that makes brands matter to the people they need to reach.
+            </p>
+            <p>
+              The work must land in culture. The numbers will follow.
             </p>
           </div>
         </motion.div>

@@ -24,9 +24,9 @@ const Home = () => {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="w-full text-center relative z-10"
         >
-          <h1 className="text-[15vw] md:text-[18vw] font-black tracking-tighter leading-none uppercase select-none flex flex-col">
+          <h1 className="text-[10vw] sm:text-[11vw] md:text-[11.5vw] font-black tracking-tighter leading-none uppercase select-none flex flex-col whitespace-nowrap">
             <span className="relative inline-block">
-              LAMA<span className="text-accent">.</span>
+              KSHITIJ<span className="text-accent">.</span>
             </span>
           </h1>
         </motion.div>
@@ -93,7 +93,8 @@ const Home = () => {
       <section className="py-40 px-6 md:px-12 bg-white flex flex-col items-center text-center">
         <h3 className="font-mono text-xs font-black uppercase tracking-[0.6em] text-accent mb-12">// The Philosophy</h3>
         <p className="text-4xl md:text-7xl font-black uppercase leading-[0.9] tracking-tighter max-w-6xl">
-          Visual storytelling is not about what we see, but what we <span className="text-accent underline-none">feel</span> in the gaps between the frames.
+          Culture isn’t decoration. <br />
+          It’s the <span className="text-accent">difference</span> between a brand that gets noticed and one that gets chosen.
         </p>
       </section>
     </div>

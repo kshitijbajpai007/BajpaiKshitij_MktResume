@@ -59,7 +59,7 @@ const VideoModal = ({ isOpen, onClose, videoSrc }) => {
             </div>
             
             <div className="absolute -bottom-12 left-0 font-mono text-[10px] font-black uppercase tracking-widest text-neutral-500">
-              Internal Stream // Archive.001 // LAMA STUDIO
+              Internal Stream // Archive.001 // KSHITIJ STUDIO
             </div>
           </motion.div>
         </>

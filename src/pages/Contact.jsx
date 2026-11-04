@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 const Contact = () => {
   return (
     <div className="min-h-screen bg-white text-black pt-32 pb-20 px-6 md:px-12 container mx-auto">
-      <div className="flex flex-col md:flex-row gap-16 lg:gap-24">
+      <div className="max-w-3xl mx-auto">
         
         {/* Contact Form Section */}
         <motion.div 
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full md:w-1/2 flex flex-col"
+          className="w-full flex flex-col"
         >
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.9] mb-8">
             LET'S <br /> 
@@ -55,31 +55,6 @@ const Contact = () => {
               Submit Proposal
             </button>
           </form>
-        </motion.div>
-
-        {/* Discovery Call Section */}
-        <motion.div 
-          initial={{ opacity: 0, x: 30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full md:w-1/2 flex flex-col"
-        >
-          <div className="w-full h-full min-h-[500px] border-4 border-black bg-neutral-100 flex flex-col items-center justify-center p-12 text-center shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
-            <h3 className="text-4xl font-black uppercase mb-4 tracking-tighter">Direct Line</h3>
-            <p className="font-mono text-sm text-neutral-600 mb-8 max-w-sm font-bold">
-              Bypass the inbox. Schedule a 30-minute consultation directly in my calendar.
-            </p>
-            
-            <button className="px-8 py-4 bg-white text-black font-black text-sm tracking-widest uppercase border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all">
-              Book via Calendly
-            </button>
-            
-            <div className="mt-12 flex flex-col items-center gap-4">
-              <span className="font-mono text-xs font-bold uppercase tracking-widest">Or Reach Out Directly:</span>
-              <a href="mailto:hello@example.com" className="font-black text-xl hover:underline decoration-4 underline-offset-4">HELLO@EXAMPLE.COM</a>
-              <span className="font-mono text-sm font-bold">LOS ANGELES / WORLDWIDE</span>
-            </div>
-          </div>
         </motion.div>
       </div>
     </div>
