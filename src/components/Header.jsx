@@ -25,10 +25,10 @@ const Header = () => {
   }, [location.pathname]);
 
   const categories = [
-    { id: 'music', label: 'Music', description: 'Editorial // Music Videos // Live' },
-    { id: 'brand', label: 'Brand', description: 'Commercial // Product // Lifestyle' },
-    { id: 'food', label: 'Food', description: 'Culinary Arts // Hospitality' },
-    { id: 'miscellaneous', label: 'Miscellaneous', description: 'Experimental // Personal // Street' },
+    { id: 'founder-led', label: 'Founder-Led Social', description: 'Voice // Ghostwriting // Executive Reach' },
+    { id: 'brand-strategy', label: 'Brand Strategy', description: 'Positioning // Cultural Capital // Campaign Architecture' },
+    { id: 'direct-response', label: 'Direct Response', description: 'Conversion // Retention Loops // Digital Builds' },
+    { id: 'long-form', label: 'Long-Form', description: 'Video Essays // Screenplays // Speculative Lore' },
   ];
 
   return (

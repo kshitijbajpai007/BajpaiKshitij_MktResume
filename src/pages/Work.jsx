@@ -8,10 +8,10 @@ const Work = () => {
   const navigate = useNavigate();
 
   const categories = [
-    { id: 'music', label: 'Music', description: 'Editorial // Music Videos // Live' },
-    { id: 'brand', label: 'Brand', description: 'Commercial // Product // Lifestyle' },
-    { id: 'food', label: 'Food', description: 'Culinary Arts // Hospitality' },
-    { id: 'miscellaneous', label: 'Miscellaneous', description: 'Experimental // Personal // Street' },
+    { id: 'founder-led', label: 'Founder-Led Social', description: 'Voice // Ghostwriting // Executive Reach' },
+    { id: 'brand-strategy', label: 'Brand Strategy', description: 'Positioning // Cultural Capital // Campaign Architecture' },
+    { id: 'direct-response', label: 'Direct Response', description: 'Conversion // Retention Loops // Digital Builds' },
+    { id: 'long-form', label: 'Long-Form', description: 'Video Essays // Screenplays // Speculative Lore' },
   ];
 
   return (
@@ -87,20 +87,30 @@ const Work = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center flex-grow pt-12">
         <div className="border-l-[12px] border-accent pl-12 h-fit">
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-none">
-            A COLLECTION OF <br/> HIGH-FIDELITY <br/> STORYTELLING<span className="text-accent">.</span>
+            WORDS AS <br/> INFRASTRUCTURE<span className="text-accent">.</span> <br/> STRATEGY AS <br/> LEVERAGE<span className="text-accent">.</span>
           </h2>
           <p className="font-mono text-xs md:text-sm font-bold uppercase tracking-[0.2em] leading-relaxed text-neutral-500 max-w-sm">
-            From editorial depth to commercial precision, we curate moments that define the visual standard of tomorrow. Use the sector selector to explore our archive.
+            From executive ghostwriting to high-conversion direct response, every narrative is engineered to cut through noise and land in culture. Use the sector selector above to inspect the archive.
           </p>
         </div>
         
-        <div className="w-full aspect-video bg-neutral-100 border-4 border-black relative overflow-hidden group shadow-[16px_16px_0px_0px_rgba(0,0,0,0.1)]">
-          <img 
-            src="https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=1200&q=80" 
-            alt="Work Showcase" 
-            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
-          />
-          <div className="absolute inset-0 bg-accent/20 group-hover:bg-transparent transition-colors duration-700" />
+        <div className="w-full aspect-video bg-black text-white border-4 border-black p-8 md:p-12 flex flex-col justify-between relative overflow-hidden shadow-[16px_16px_0px_0px_rgba(162,198,94,1)] group hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all duration-300">
+          <div className="flex justify-between items-start">
+            <span className="font-mono text-xs font-black uppercase tracking-[0.3em] text-accent">
+              MANIFESTO // 001
+            </span>
+            <span className="font-mono text-xs text-neutral-400">
+              [SYSTEM VERIFIED]
+            </span>
+          </div>
+          <div>
+            <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-4">
+              CULTURE ISN'T DECORATION<span className="text-accent">.</span>
+            </h3>
+            <p className="font-mono text-xs uppercase tracking-widest text-neutral-300">
+              It is the difference between being noticed and being chosen.
+            </p>
+          </div>
         </div>
       </div>
     </div>

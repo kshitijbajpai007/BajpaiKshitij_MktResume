@@ -6,10 +6,10 @@ const Home = () => {
   const navigate = useNavigate();
 
   const quadrants = [
-    { id: "music", label: "Music", path: "/work/music", color: "bg-white", description: "Vibe // Logic // Narrative" },
-    { id: "brand", label: "Brand", path: "/work/brand", color: "bg-white", description: "Identity // Strategy // Scale" },
-    { id: "food", label: "Food", path: "/work/food", color: "bg-white", description: "Taste // Texture // Frame" },
-    { id: "miscellaneous", label: "Miscellaneous", path: "/work/miscellaneous", color: "bg-white", description: "Raw // Untamed // Abstract" },
+    { id: "founder-led", label: "Founder-Led Social", path: "/work/founder-led", color: "bg-white", description: "Voice // Ghostwriting // Executive Reach" },
+    { id: "brand-strategy", label: "Brand Strategy", path: "/work/brand-strategy", color: "bg-white", description: "Positioning // Cultural Capital // Campaign Architecture" },
+    { id: "direct-response", label: "Direct Response", path: "/work/direct-response", color: "bg-white", description: "Conversion // Retention Loops // Digital Builds" },
+    { id: "long-form", label: "Long-Form", path: "/work/long-form", color: "bg-white", description: "Video Essays // Screenplays // Speculative Lore" },
   ];
 
   return (
@@ -38,7 +38,7 @@ const Home = () => {
           className="flex flex-col items-center mt-4 text-center max-w-3xl relative z-10"
         >
           <p className="font-mono text-xs md:text-sm font-black uppercase tracking-[0.5em] text-neutral-400 mb-12 leading-relaxed">
-            Culture-led copywriting and strategy <br /> turning insights into stories that people notice, and care about.
+            Culture-led copywriting and strategy <br /> turning insights into stories that people notice and care about.
           </p>
 
 

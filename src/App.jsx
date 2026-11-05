@@ -12,14 +12,19 @@ import CategoryPage from './pages/CategoryPage';
 
 function AnimatedRoutes() {
   const location = useLocation();
+  // Group /work/:category and /work/:category/:slug under the same route transition key
+  const routeKey = location.pathname.startsWith('/work/')
+    ? location.pathname.split('/').slice(0, 3).join('/')
+    : location.pathname;
   
   return (
     <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
+      <Routes location={location} key={routeKey}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
         <Route path="/work/:category" element={<CategoryPage />} />
+        <Route path="/work/:category/:slug" element={<CategoryPage />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>

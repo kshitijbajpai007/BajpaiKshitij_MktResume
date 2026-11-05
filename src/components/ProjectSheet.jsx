@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ArrowRight } from 'lucide-react';
 import MediaCard from './MediaCard';
@@ -6,6 +6,25 @@ import VideoModal from './VideoModal';
 
 const ProjectSheet = ({ project, isOpen, onClose }) => {
   const [playingVideo, setPlayingVideo] = useState(null);
+
+  // Lock body scroll and support Escape key dismissal
+  useEffect(() => {
+    if (!isOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        onClose?.();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isOpen, onClose]);
 
   if (!project) return null;
 
@@ -39,11 +58,14 @@ const ProjectSheet = ({ project, isOpen, onClose }) => {
 
             {/* Sheet */}
             <motion.div
+              role="dialog"
+              aria-modal="true"
+              aria-label={project.title}
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 35, stiffness: 400, mass: 1 }}
-              className="fixed right-0 top-0 h-full w-full md:w-[90vw] lg:w-[75vw] bg-white z-[70] border-l-[12px] border-accent overflow-y-auto hide-scrollbar"
+              className="fixed right-0 top-0 h-full w-full md:w-[90vw] lg:w-[75vw] bg-white z-[70] border-l-[12px] border-accent overflow-y-auto"
             >
               <div className="sticky top-0 right-0 p-8 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-end bg-white z-50 border-b-[8px] border-black gap-6">
                 <div>
